@@ -1,0 +1,36 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Multiplication Practice</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            button {
+                background-color: #31c931;
+                border: none;
+                padding: 7px 15px 7px 15px;
+                font-size: 15px;
+                border-radius: 11px;
+            }
+            button:hover {
+                background-color: #2aa12a;
+            }
+        </style>
+        <script type="text/javascript">
+            function Add_Question() {
+                var num1 = Math.round(Math.random() * 10);
+                var num2 = Math.round(Math.random() * 10);
+                document.getElementByID("question").innerHTML = num1 + " + " + num2;
+            }
+        </script>
+    </head>
+    <body onload="Add_Question()">
+        <h1>Multiplication Practice</h1>
+        <p id="question"></p>
+        <input type="number"/>
+        <br>
+        <br>
+        <button>Submit</button>
+    </body>
+</html>
